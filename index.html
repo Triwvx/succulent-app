@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exam 1</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles&family=Patrick+Hand&family=Roboto:ital,wght@0,300;0,400;1,300&family=Source+Sans+Pro:wght@600&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!--nav bar-->
+    <div class="header">
+        <div id="header-left">
+            <img class="leaf" src="assets/leaf.png" alt="leaf">
+            <h1>EasyBay</h1>
+        </div>
+        <input id="search" type="text" name="search" placeholder="Search for anything">
+        <div id="header-right">
+            <p>Sign In</p>
+            <img id="shopping-cart" onclick="alert('Your cart is empty!')" src="assets/cart-dark.png"
+                alt="shopping-cart">
+        </div>
+    </div>
+    <!--plant types-->
+    <div id="plant-types">
+        <ul>
+            <li>Aeonium</li>
+            <li>Andormischus</li>
+            <li>Agave</li>
+            <li>Aloe</li>
+            <li>Anacampseros</li>
+            <li>Aristaloe</li>
+            <li>More...</li>
+        </ul>
+    </div>
+    <!--line--->
+    <hr>
+    <!--title-->
+    <div class="title">
+        <h2>Your source for Serious Succulent Special</h2>
+    </div>
+    <div class="left-col">
+        <!-- left container-->
+        <div class="col-1">
+            <div id="succ-col-1">
+                <h1>Discover succ-ulent varities one pot or rack at a time!</h1>
+                <span id="discover-text">
+                    <h2>Discover<img id="arrow-1" src="assets/arrow-light.png" alt="arrow-white"></h2>
+                </span>
+            </div>
+            <div>
+                <img id="succimg-1" src="succulents-1.jpg" alt="succulents-1" onmouseover="onHover(this)">
+                <!-- <img id="succimg-2" src="succulents-2.jpg" alt="succ-2" onmouseout="offHover(this)"> -->
+            </div>
+        </div>
+        <!--right container-->
+        <div class="right-col">
+            <!--top right column-->
+            <img class="aloe-img" src="assets/aloe-m.jpg" alt="aloe-m">
+            <!--bottom right column-->
+            <span id="soothing-text">
+                <h1>Soothing aloe <img id="arrow-2" src="assets/arrow-light.png" alt="arrow-white"></h1>
+            </span>
+        </div>
+    </div>
+    <!--plant column-->
+    <div class="plants">
+        <div id="plant-container">
+            <div class="pcol-1">
+                <div class="plant">
+                    <img src="assets/aeonium-s.jpg" alt="aeonium">
+                    <h2>Aeonium</h2>
+                </div>
+            </div>
+            <div class="pcol-2">
+                <div class="plant">
+                    <img src="assets/aloe-s.jpg" alt="aloe-s">
+                    <h2>Aloe</h2>
+                </div>
+            </div>
+            <div class="pcol-3">
+                <div class="plant">
+                    <img src="assets/cactus-s.jpg" alt="cactus-s">
+                    <h2>Cactus</h2>
+                </div>
+            </div>
+            <div class="pcol-4">
+                <div class="plant">
+                    <img src="assets/echeveria-s.jpg" alt="echeveria-s">
+                    <h2>Echeveria</h2>
+                </div>
+            </div>
+            <div class="pcol-5">
+                <div class="plant">
+                    <img src="assets/sedum-s.jpg" alt="sedum-s">
+                    <h2>Sedum</h2>
+                </div>
+            </div>
+            <div class="pcol-6">
+                <div class="plant">
+                    <img src="assets/sempervivum-s.jpg" alt="sempervivum-s">
+                    <h2>Sempervivum</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--cookie policy-->
+    <div id="cookie-container">
+        <div class="cookie-policy">
+            <img src="assets/alert-dark.png" alt="cookie policy">
+            <div id="cookie-text">
+                <div id="text">
+                    <p>This site makes use of third-party cookies, by clicking "I accept" you agree to the terms
+                        outlined in our <a href="x">cookie policy.</a></p>
+                </div>
+                <button class="policy-button" onclick="hide('#cookie-container')">I Accept</button>
+            </div>
+        </div>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
